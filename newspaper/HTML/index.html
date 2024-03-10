@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Newspaper</title>
+  </head>
+  <body>
+    <!-- info -->
+    <section>
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center px-5"
+      >
+        <a href="" class="link-secondary">Subscribe</a>
+        <h1 class="fs-2 text-decoration-underline fw-light">News</h1>
+        <button
+          class="btn btn-outline-secondary"
+          data-bs-toggle="modal"
+          data-bs-target="#modalContent"
+        >
+          Sign In
+        </button>
+      </div>
+    </section>
+
+    <!-- navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg">
+        <a href="" class="navbar-brand d-lg-none d-block">
+          <img src="../Image/newsLogo.png" alt="" class="img-fluid me-3" />
+          YAZ Newspaper
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav m-lg-auto">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Media</a></li>
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Category</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">Economy</a></li>
+                <li><a href="" class="dropdown-item">World</a></li>
+                <li><a href="" class="dropdown-item">Hot</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a href="" class="dropdown-item">Action</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- modal: sign In -->
+    <section>
+      <div class="modal fade" id="modalContent">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Sign In Form</h3>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form class="needs-validation" novalidate>
+              <div class="modal-body">
+                <div class="row g-2">
+                  <div class="col-12">
+                    <label for="usernameInput" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="text"
+                      id="usernameInput"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="passwordInput" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      id="passwordInput"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-danger" data-bs-dismiss="modal">
+                  Cloase
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- starter -->
+    <section class="mt-5">
+      <div class="container p-4 bg-dark text-white">
+        <div class="row">
+          <div class="col-8">
+            <p class="display-1 fst-italic fw-bolder mb-2">
+              Title for a larger featured post
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              incidunt sequi numquam nam laborum! Aliquid ut, ea nulla ad
+              voluptas iusto quas vero fugiat molestiae qui magni cupiditate
+              enim maxime?
+            </p>
+            <a href="" class="link-light fs-3 fw-bold">Continue reading...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured post -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="card p-3">
+              <div class="row">
+                <div class="col-lg-8 col-12">
+                  <p class="text-primary fw-bold">World</p>
+                  <p class="card-title">Featured Post</p>
+                  <p class="card-subtitle">12 Nov</p>
+                  <p class="card-text lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, possimus? Quaerat quos, ex officiis natus culpa ab et
+                    autem vel qui earum dignissimos recusandae numquam officia
+                    tempore? Expedita, veritatis harum?
+                  </p>
+                  <a href="" class="link-secondary stretched-link"
+                    >Continue reading</a
+                  >
+                </div>
+                <div class="col-lg-4 d-lg-flex d-none">
+                  <img
+                    src="../Image/img1.jpg"
+                    alt=""
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card p-3">
+              <div class="row">
+                <div class="col-lg-8 col-12">
+                  <p class="text-danger fw-bold">HOT</p>
+                  <p class="card-title">Featured Post</p>
+                  <p class="card-subtitle">12 Nov</p>
+                  <p class="card-text lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, possimus? Quaerat quos, ex officiis natus culpa ab et
+                    autem vel qui earum dignissimos recusandae numquam officia
+                    tempore? Expedita, veritatis harum?
+                  </p>
+                  <a href="" class="link-secondary stretched-link"
+                    >Continue reading</a
+                  >
+                </div>
+                <div class="col-lg-4 d-lg-flex d-none">
+                  <img
+                    src="../Image/img2.jpg"
+                    alt=""
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5" />
+
+    <!-- article -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row gx-2">
+          <div class="col-lg-6 col-12">
+            <p class="display-3 fw-bold fst-italic">Sample blog post</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+            <p class="display-4">Heading</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+            <p class="display-4">Sub heading</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dolorum qui saepe non pariatur, vero perspiciatis quidem quo
+              similique ducimus illum quaerat vel dolores necessitatibus,
+              voluptatem voluptate, nemo nulla sint.
+            </p>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="bg-light p-3">
+              <p class="display-5 fw-bold fst-italic">About</p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                architecto natus qui alias suscipit expedita, temporibus
+                doloribus assumenda debitis, quis recusandae tempora rerum
+                commodi ducimus! Voluptatem nihil facere maxime laudantium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
+</html>
