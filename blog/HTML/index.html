@@ -12,10 +12,10 @@
   <body>
     <!-- navbar -->
     <section>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-light text-dark">
         <div class="container-fluid">
           <a href="" class="navbar-brand">
-            <img src="../Image/logo.png" alt="logo" class="img-fluid me-3" />
+            <img src="../Image/logo.png" alt="logo" class="me-3 img-fluid" />
             Your name
           </a>
           <button
@@ -25,7 +25,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse collapse" id="navbarContent">
+          <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a href="" class="nav-link active">Home</a>
@@ -41,15 +41,15 @@
     <!-- info -->
     <section class="mt-5">
       <div class="container">
-        <p class="display-3 mb-0">Your name</p>
-        <p class="fs-3 fw-light text-secondary">Your profession</p>
-        <div class="row">
+        <h3 class="display-4">Your name</h3>
+        <p class="text-secondary fs-3 fw-light">Your profession</p>
+        <div class="row g-4">
           <div class="col-lg-6 col-12">
             <img src="../Image/img1.jpeg" alt="" class="img-fluid" />
           </div>
           <div class="col-lg-6 col-12">
             <h3>About</h3>
-            <p class="lead">
+            <p class="lead fs-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
               possimus illum vero culpa voluptate velit sint! Vero, at! Qui
               vitae veniam sed exercitationem deserunt voluptatibus autem
@@ -67,11 +67,11 @@
       </div>
     </section>
 
-    <!-- img -->
-    <section class="mt-5">
-      <div class="container">
+    <!-- posts -->
+    <section>
+      <div class="container mt-5">
         <h3>Featured Posts</h3>
-        <div class="row">
+        <div class="row g-2">
           <div class="col-lg-3 col-6">
             <figure class="figure">
               <img
@@ -125,35 +125,35 @@
     </section>
 
     <!-- carousel -->
-    <section class="mt-5">
-      <div class="container">
-        <div class="carousel slide" data-bs-ride="carousel" id="carouselContent">
+    <section>
+      <div class="container mt-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-lg-6 col-12">
                   <h3>Title 1</h3>
-                  <p class="lead">
+                  <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Doloribus deserunt tenetur vero quisquam, omnis harum ad
                     delectus debitis eveniet magnam.
                   </p>
                 </div>
                 <div class="col-lg-6 col-12">
-                  <h3>Title 2</h3>
-                  <p class="lead">
+                  <h3>Title 1</h3>
+                  <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Doloribus deserunt tenetur vero quisquam, omnis harum ad
                     delectus debitis eveniet magnam.
                   </p>
-              </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row">
                 <div class="col-lg-6 col-12">
                   <h3>Title 3</h3>
-                  <p class="lead">
+                  <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Doloribus deserunt tenetur vero quisquam, omnis harum ad
                     delectus debitis eveniet magnam.
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                   <h3>Title 4</h3>
-                  <p class="lead">
+                  <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Doloribus deserunt tenetur vero quisquam, omnis harum ad
                     delectus debitis eveniet magnam.
@@ -170,10 +170,18 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" data-bs-target="#carouselContent" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon"></span>
           </button>
-          <button class="carousel-control-next" data-bs-target="#carouselContent" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
@@ -181,90 +189,86 @@
     </section>
 
     <!-- form -->
-    <section class="mt-5">
-      <div class="container">
-        <h3>Contact (Your name)</h3>
+    <section>
+      <div class="container mt-5">
+        <h3>Contact (Your Name)</h3>
         <form class="needs-validation" novalidate>
-          <div class="row gy-3">
+          <div class="row g-3">
             <div class="col-lg-4 col-12">
               <label for="firstNameInput" class="mb-1">First Name</label>
-              <input type="text" class="form-control" id="firstNameInput" required>
-              <div class="valid-feedback">
-                Great!
-              </div>
-              <div class="invalid-feedback">
-                Please fill out the field
-              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="firstNameInput"
+                required
+              />
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">Please fill out this field!</div>
             </div>
             <div class="col-lg-4 col-12">
               <label for="lastNameInput" class="mb-1">Last Name</label>
-              <input type="text" class="form-control" id="lastNameInput" required>
-              <div class="valid-feedback">
-                Great!
-              </div>
-              <div class="invalid-feedback">
-                Please fill out the field
-              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="lastNameInput"
+                required
+              />
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">Please fill out this field!</div>
             </div>
             <div class="col-lg-4 col-12">
               <label for="usernameInput" class="mb-1">Username</label>
               <div class="input-group">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="usernameInput" required>
-                <div class="valid-feedback">
-                  Great!
-                </div>
-                <div class="invalid-feedback">
-                  Please fill out the field
-                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameInput"
+                  required
+                />
+                <div class="valid-feedback">Great!</div>
+                <div class="invalid-feedback">Please fill out this field!</div>
               </div>
-          
             </div>
             <div class="col-lg-6 col-12">
               <label for="cityInput" class="mb-1">City</label>
-              <input type="text" class="form-control" id="cityInput" required>
-              <div class="valid-feedback">
-                Great!
-              </div>
-              <div class="invalid-feedback">
-                Please fill out the field
-              </div>
+              <input type="text" class="form-control" id="cityInput" required />
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">Please fill out this field!</div>
             </div>
             <div class="col-lg-3 col-12">
               <label for="stateInput" class="mb-1">State</label>
               <select id="stateInput" class="form-select" required>
-                <option value="">Ho Chi Minh</option>
+                <option value="" selected>Ho Chi Minh</option>
                 <option value="">Ha Noi</option>
                 <option value="">Hai Phong</option>
                 <option value="">Thanh Hoa</option>
               </select>
-              <div class="valid-feedback">
-                Great!
-              </div>
-              <div class="invalid-feedback">
-                Please fill out the field
-              </div>
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">Please fill out this field!</div>
             </div>
             <div class="col-lg-3 col-12">
               <label for="zipcodeInput" class="mb-1">Zipcode</label>
-              <input type="text" class="form-control" id="zipcodeInput" required>
-              <div class="valid-feedback">
-                Great!
-              </div>
-              <div class="invalid-feedback">
-                Please fill out the field
-              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="zipcodeInput"
+                required
+              />
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">Please fill out this field!</div>
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="agreed" required>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="agreed"
+                  required
+                />
                 <label for="agreed" class="form-check-label">Agreed</label>
-                <div class="valid-feedback">
-                  Great!
-                </div>
-                <div class="invalid-feedback">
-                  Please fill out the field
-                </div>
+                <div class="valid-feedback">Great!</div>
+                <div class="invalid-feedback">Please fill out this field!</div>
               </div>
             </div>
             <div class="col-12">
@@ -275,52 +279,122 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="mt-5">
-      <div class="container-fluid bg-light p-3" style="height: 200px;">
-        <div class="row">
-          <div class="col-lg-3 col-12 text-center">
-            <img src="../Image/facebook.png" alt="" class="img-fluid">
-            <ul class="list-unstyled">
-              <li><a href="" class="text-decoration-none link-primary">Item 1</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Item 2</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Item 3</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Item 4</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Item 5</a></li>
-            </ul>
+    <footer>
+      <div
+        class="container-fluid mt-5 bg-light px-5 py-3"
+        style="height: 200px"
+      >
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-lg-3 col-6 text-center">
+              <h4>
+                <img src="../Image/facebook.png" alt="" class="img-fluid" />
+              </h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="link-primary text-decoration-none"
+                    >Item 1</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-primary text-decoration-none"
+                    >Item 2</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-primary text-decoration-none"
+                    >Item 3</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-primary text-decoration-none"
+                    >Item 4</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-primary text-decoration-none"
+                    >Item 5</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <h4>
+                <img src="../Image/insta.png" alt="" class="img-fluid" />
+              </h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="link-danger text-decoration-none">Item 1</a>
+                </li>
+                <li>
+                  <a href="" class="link-danger text-decoration-none">Item 2</a>
+                </li>
+                <li>
+                  <a href="" class="link-danger text-decoration-none">Item 3</a>
+                </li>
+                <li>
+                  <a href="" class="link-danger text-decoration-none">Item 4</a>
+                </li>
+                <li>
+                  <a href="" class="link-danger text-decoration-none">Item 5</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <h4>
+                <img src="../Image/snap.png" alt="" class="img-fluid" />
+              </h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="link-warning text-decoration-none"
+                    >Item 1</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-warning text-decoration-none"
+                    >Item 2</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-warning text-decoration-none"
+                    >Item 3</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-warning text-decoration-none"
+                    >Item 4</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="link-warning text-decoration-none"
+                    >Item 5</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <h4>
+                <img src="../Image/tele.png" alt="" class="img-fluid" />
+              </h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="link-info text-decoration-none">Item 1</a>
+                </li>
+                <li>
+                  <a href="" class="link-info text-decoration-none">Item 2</a>
+                </li>
+                <li>
+                  <a href="" class="link-info text-decoration-none">Item 3</a>
+                </li>
+                <li>
+                  <a href="" class="link-info text-decoration-none">Item 4</a>
+                </li>
+                <li>
+                  <a href="" class="link-info text-decoration-none">Item 5</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3 col-12 text-center">
-            <img src="../Image/insta.png" alt="" class="img-fluid">
-            <ul class="list-unstyled">
-              <li><a href="" class="text-decoration-none link-danger">Item 1</a></li>
-              <li><a href="" class="text-decoration-none link-danger">Item 2</a></li>
-              <li><a href="" class="text-decoration-none link-danger">Item 3</a></li>
-              <li><a href="" class="text-decoration-none link-danger">Item 4</a></li>
-              <li><a href="" class="text-decoration-none link-danger">Item 5</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-12 text-center">
-            <img src="../Image/snap.png" alt="" class="img-fluid">
-            <ul class="list-unstyled">
-              <li><a href="" class="text-decoration-none link-warning">Item 1</a></li>
-              <li><a href="" class="text-decoration-none link-warning">Item 2</a></li>
-              <li><a href="" class="text-decoration-none link-warning">Item 3</a></li>
-              <li><a href="" class="text-decoration-none link-warning">Item 4</a></li>
-              <li><a href="" class="text-decoration-none link-warning">Item 5</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-12 text-center">
-            <img src="../Image/tele.png" alt="" class="img-fluid">
-            <ul class="list-unstyled">
-              <li><a href="" class="text-decoration-none link-info">Item 1</a></li>
-              <li><a href="" class="text-decoration-none link-info">Item 2</a></li>
-              <li><a href="" class="text-decoration-none link-info">Item 3</a></li>
-              <li><a href="" class="text-decoration-none link-info">Item 4</a></li>
-              <li><a href="" class="text-decoration-none link-info">Item 5</a></li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </footer>
